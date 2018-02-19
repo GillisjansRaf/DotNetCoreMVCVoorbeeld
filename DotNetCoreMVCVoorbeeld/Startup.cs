@@ -39,12 +39,13 @@ namespace DotNetCoreMVCVoorbeeld
 
             app.UseStaticFiles();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseMvcWithDefaultRoute();
+            //app.usemvc(routes =>
+            //{
+            //    routes.maproute(
+            //        name: "default",
+            //        template: "{controller=home}/{action=index}/{id?}");
+            //});
         }
     }
 }
